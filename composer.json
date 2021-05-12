@@ -16,6 +16,7 @@
     "require": {
         "drupal/environment_indicator": "^4.0",
         "drupal/honeypot": "^2.0",
+        "drupal/pantheon_advanced_page_cache": "^1.2",
         "drupal/webform": "^6.0",
         "drush/drush": "^10",
         "pantheon-upstreams/upstream-configuration": "*",
