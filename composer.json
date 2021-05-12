@@ -15,6 +15,7 @@
     ],
     "require": {
         "drupal/config_batch_export": "^1.0@beta",
+        "drupal/devel": "^4.1",
         "drupal/diff": "^1.0",
         "drupal/environment_indicator": "^4.0",
         "drupal/honeypot": "^2.0",
