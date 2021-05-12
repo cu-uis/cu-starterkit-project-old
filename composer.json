@@ -14,6 +14,7 @@
         }
     ],
     "require": {
+        "drupal/config_batch_export": "^1.0@beta",
         "drupal/environment_indicator": "^4.0",
         "drupal/honeypot": "^2.0",
         "drupal/metatag": "^1.16",
