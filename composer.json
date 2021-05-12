@@ -18,9 +18,11 @@
         "drupal/honeypot": "^2.0",
         "drupal/pantheon_advanced_page_cache": "^1.2",
         "drupal/sendgrid_integration": "^1.7",
+        "drupal/simplesamlphp_auth": "^3.2",
         "drupal/webform": "^6.0",
         "drush/drush": "^10",
         "pantheon-upstreams/upstream-configuration": "*",
+        "simplesamlphp/simplesamlphp": "^1.19",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "conflict": {
