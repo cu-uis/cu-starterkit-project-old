@@ -79,5 +79,11 @@
         "platform": {
             "php": "7.4"
         }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "mkdir -p web/libraries/bootstrap",
+            "cp -R vendor/twbs/bootstrap/dist web/libraries/bootstrap"
+        ]
     }
 }
