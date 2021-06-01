@@ -137,3 +137,6 @@ upstream/web/
 .ddev/*
 /web/sites/default/settings.php
 
+# Ignore composer.lock to avoid site level conflicts #
+composer.lock
+
