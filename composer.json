@@ -26,6 +26,7 @@
         "drupal/sendgrid_integration": "^1.7",
         "drupal/simplesamlphp_auth": "^3.2",
         "drupal/structure_sync": "^2.0",
+        "drupal/styleguide": "^2.0@beta",
         "drupal/twig_tweak": "^3.1",
         "drupal/twig_vardumper": "^3.0",
         "drupal/webform": "^6.0",
@@ -83,7 +84,7 @@
     "scripts": {
         "post-update-cmd": [
             "mkdir -p web/libraries/bootstrap",
-            "cp -R vendor/twbs/bootstrap/dist web/libraries/bootstrap"
+            "cp -R vendor/twbs/bootstrap/dist web/libraries/bootstrap",
             "rm -rf vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../private/simplesamlphp/config vendor/simplesamlphp/simplesamlphp/config"
         ]
     }
