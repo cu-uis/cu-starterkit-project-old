@@ -84,6 +84,7 @@
         "post-update-cmd": [
             "mkdir -p web/libraries/bootstrap",
             "cp -R vendor/twbs/bootstrap/dist web/libraries/bootstrap"
+            "rm -rf vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../private/simplesamlphp/config vendor/simplesamlphp/simplesamlphp/config"
         ]
     }
 }
