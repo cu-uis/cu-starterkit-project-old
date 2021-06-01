@@ -14,6 +14,7 @@
         }
     ],
     "require": {
+        "drupal/bootstrap_barrio": "^5.5",
         "drupal/config_batch_export": "^1.0@beta",
         "drupal/devel": "^4.1",
         "drupal/diff": "^1.0",
@@ -24,6 +25,7 @@
         "drupal/pantheon_advanced_page_cache": "^1.2",
         "drupal/sendgrid_integration": "^1.7",
         "drupal/simplesamlphp_auth": "^3.2",
+        "drupal/structure_sync": "^2.0",
         "drupal/twig_tweak": "^3.1",
         "drupal/twig_vardumper": "^3.0",
         "drupal/webform": "^6.0",
