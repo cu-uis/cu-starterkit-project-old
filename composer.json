@@ -24,6 +24,8 @@
         "drupal/honeypot": "^2.0",
         "drupal/metatag": "^1.16",
         "drupal/pantheon_advanced_page_cache": "^1.2",
+        "drupal/role_delegation": "^1.1",
+        "drupal/role_expire": "^2.0",
         "drupal/sendgrid_integration": "^1.7",
         "drupal/simplesamlphp_auth": "^3.2",
         "drupal/structure_sync": "^2.0",
