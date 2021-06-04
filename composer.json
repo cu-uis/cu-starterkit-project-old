@@ -28,7 +28,7 @@
         "drupal/role_delegation": "^1.1",
         "drupal/role_expire": "^2.0",
         "drupal/sendgrid_integration": "^1.7",
-        "drupal/shortcode": "^2.0",
+        "drupal/shortcode": "2.0.x-dev",
         "drupal/simplesamlphp_auth": "^3.2",
         "drupal/structure_sync": "^2.0",
         "drupal/styleguide": "^2.0@beta",
