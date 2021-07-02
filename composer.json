@@ -23,6 +23,7 @@
         "drupal/entity_clone": "^1.0@beta",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/environment_indicator": "^4.0",
+        "drupal/force_users_logout": "^2.0.x-dev",
         "drupal/google_tag": "^1.4",
         "drupal/honeypot": "^2.0",
         "drupal/linkit": "^6.0.0",
@@ -41,6 +42,7 @@
         "drupal/styleguide": "^2.0@beta",
         "drupal/twig_tweak": "^3.1",
         "drupal/twig_vardumper": "^3.0",
+        "drupal/user_external_invite": "^2.0.x-dev",
         "drupal/webform": "^6.0",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10",
@@ -84,6 +86,11 @@
             "include": [
                 "web/modules/contrib/webform/composer.libraries.json"
             ]
+        },
+        "patches": {
+            "drupal/core": {
+                "Taxonomy Index for unpublished entities": "https://www.drupal.org/files/issues/2021-02-03/962664-drupal-add-unpublished-nodes-to-taxonomy-index-168.patch"
+            }
         }
     },
     "config": {
