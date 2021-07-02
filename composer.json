@@ -23,6 +23,7 @@
         "drupal/entity_clone": "^1.0@beta",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/environment_indicator": "^4.0",
+        "drupal/field_group": "^3.1",
         "drupal/field_permissions": "^1.1",
         "drupal/force_users_logout": "^2.0.x-dev",
         "drupal/google_tag": "^1.4",
