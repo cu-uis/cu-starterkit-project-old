@@ -18,6 +18,7 @@
         "drupal/clientside_validation": "^3",
         "drupal/config_batch_export": "^1.0@beta",
         "drupal/content_moderation_notifications": "^3.3",
+        "drupal/csv_serialization": "^2.0",
         "drupal/devel": "^4.1",
         "drupal/diff": "^1.0",
         "drupal/entity_clone": "^1.0@beta",
