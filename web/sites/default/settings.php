@@ -52,7 +52,7 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
       $config['environment_indicator.indicator']['fg_color'] = '#ffffff';
       break;
     case 'test':
-      $primary_domain = 'online-test.cu.edu';
+      //$primary_domain = 'online-test.cu.edu';
       $config['environment_indicator.indicator']['name'] = 'Test';
       $config['environment_indicator.indicator']['bg_color'] = '#c50707';
       $config['environment_indicator.indicator']['fg_color'] = '#ffffff';
