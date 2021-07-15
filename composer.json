@@ -95,6 +95,9 @@
         "patches": {
             "drupal/core": {
                 "Taxonomy Index for unpublished entities": "https://www.drupal.org/files/issues/2021-02-03/962664-drupal-add-unpublished-nodes-to-taxonomy-index-168.patch"
+            },
+            "drupal/structure_sync": {
+                "D9 - getVocabularyId (undefined method)": "https://www.drupal.org/files/issues/2020-11-05/3180878-undefined-method-getVocabularyId-1.patch"
             }
         }
     },
