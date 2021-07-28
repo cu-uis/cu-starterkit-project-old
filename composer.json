@@ -29,6 +29,7 @@
         "drupal/force_users_logout": "^2.0.x-dev",
         "drupal/google_tag": "^1.4",
         "drupal/honeypot": "^2.0",
+        "drupal/layout_paragraphs": "^1.0",
         "drupal/linkit": "^6.0.0",
         "drupal/login_history": "^1.0",
         "drupal/metatag": "^1.16",
