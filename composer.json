@@ -112,8 +112,12 @@
     "scripts": {
         "post-update-cmd": [
             "mkdir -p web/libraries/bootstrap",
-            "cp -R vendor/twbs/bootstrap/dist web/libraries/bootstrap",
-            "rm -rf vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../private/simplesamlphp/config vendor/simplesamlphp/simplesamlphp/config"
+            "cp -R vendor/twbs/bootstrap/dist web/libraries/bootstrap"
+        ],
+        "post-install-cmd": [
+            "rm -rf vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../private/simplesamlphp/config vendor/simplesamlphp/simplesamlphp/config",
+            "rm -rf vendor/simplesamlphp/simplesamlphp/metadata && ln -sf ../../../private/simplesamlphp/metadata vendor/simplesamlphp/simplesamlphp/metadata",
+            "rm -rf vendor/simplesamlphp/simplesamlphp/cert && ln -sf ../../../private/simplesamlphp/cert vendor/simplesamlphp/simplesamlphp/cert"
         ]
     }
 }
