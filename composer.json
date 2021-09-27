@@ -43,6 +43,7 @@
         "drupal/scheduled_transitions_sidebar": "^2.0",
         "drupal/sendgrid_integration": "^1.7",
         "drupal/shortcode": "2.0.x-dev",
+        "drupal/simple_styleguide": "^1.8",
         "drupal/simplesamlphp_auth": "^3.2",
         "drupal/structure_sync": "^2.0",
         "drupal/styleguide": "^2.0@beta",
