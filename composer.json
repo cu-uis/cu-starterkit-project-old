@@ -52,6 +52,7 @@
         "drupal/views_data_export": "^1.0",
         "drupal/webform": "^6.0",
         "drupal/webform_config_ignore": "^1.2",
+        "drupal/webp": "^1.0@beta",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10",
         "pantheon-upstreams/upstream-configuration": "*",
