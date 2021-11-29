@@ -14,13 +14,6 @@
         }
     },
     "require": {
-        "algolia/places": "*",
-        "ckeditor/autogrow": "*",
-        "ckeditor/codemirror": "*",
-        "ckeditor/fakeobjects": "*",
-        "ckeditor/image": "*",
-        "ckeditor/link": "*",
-        "codemirror/codemirror": "*",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/clientside_validation": "^3",
         "drupal/config_batch_export": "^1.0@beta",
@@ -61,19 +54,7 @@
         "drupal/webform_config_ignore": "^1.2",
         "drupal/webp": "^1.0@beta",
         "drupal/xmlsitemap": "^1.0",
-        "drush/drush": "^10",
-        "jquery/inputmask": "*",
-        "jquery/intl-tel-input": "*",
-        "jquery/rateit": "*",
-        "jquery/select2": "*",
-        "jquery/textcounter": "*",
-        "jquery/timepicker": "*",
-        "pantheon-upstreams/upstream-configuration": "*",
-        "progress-tracker/progress-tracker": "*",
-        "signature_pad/signature_pad": "*",
-        "simplesamlphp/simplesamlphp": "1.18.8",
-        "tabby/tabby": "*",
-        "tippyjs/6.x": "*"
+        "drush/drush": "^10"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -120,11 +101,6 @@
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false
             }
-        },
-        "merge-plugin": {
-            "include": [
-                "web/modules/contrib/webform/composer.libraries.json"
-            ]
         },
         "patches": {
             "drupal/core": {
