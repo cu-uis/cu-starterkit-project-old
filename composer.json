@@ -3,17 +3,24 @@
     "description": "Install Drupal 9 with Composer on Pantheon.",
     "type": "project",
     "license": "MIT",
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        {
+        "1": {
             "type": "path",
             "url": "upstream-configuration"
         }
-    ],
+    },
     "require": {
+        "algolia/places": "*",
+        "ckeditor/autogrow": "*",
+        "ckeditor/codemirror": "*",
+        "ckeditor/fakeobjects": "*",
+        "ckeditor/image": "*",
+        "ckeditor/link": "*",
+        "codemirror/codemirror": "*",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/clientside_validation": "^3",
         "drupal/config_batch_export": "^1.0@beta",
@@ -55,23 +62,47 @@
         "drupal/webp": "^1.0@beta",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10",
+        "jquery/inputmask": "*",
+        "jquery/intl-tel-input": "*",
+        "jquery/rateit": "*",
+        "jquery/select2": "*",
+        "jquery/textcounter": "*",
+        "jquery/timepicker": "*",
         "pantheon-upstreams/upstream-configuration": "*",
-        "simplesamlphp/simplesamlphp": "1.18.8"
+        "progress-tracker/progress-tracker": "*",
+        "signature_pad/signature_pad": "*",
+        "simplesamlphp/simplesamlphp": "1.18.8",
+        "tabby/tabby": "*",
+        "tippyjs/6.x": "*"
     },
     "conflict": {
-            "drupal/drupal": "*"
+        "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/composer/{$name}": ["type:drupal-module"],
-            "web/profiles/composer/{$name}": ["type:drupal-profile"],
-            "web/themes/composer/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/composer/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/composer/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/composer/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/private/scripts/quicksilver/{$name}/": [
+                "type:quicksilver-script"
+            ]
         },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
