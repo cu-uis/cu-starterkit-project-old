@@ -1,89 +1,36 @@
 {
-    "name": "pantheon-upstreams/drupal-project",
+    "name": "cu-uis/cu-starterkit-project",
     "description": "Install Drupal 9 with Composer on Pantheon.",
     "type": "project",
     "license": "MIT",
-    "repositories": {
-        "0": {
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "1": {
+        {
             "type": "path",
             "url": "upstream-configuration"
         }
-    },
+    ],
     "require": {
-        "drupal/bootstrap_barrio": "^5.5",
-        "drupal/clientside_validation": "^3",
-        "drupal/config_batch_export": "^1.0@beta",
-        "drupal/content_moderation_notifications": "^3.3",
-        "drupal/csv_serialization": "^2.0",
-        "drupal/devel": "^4.1",
-        "drupal/diff": "^1.0",
-        "drupal/entity_clone": "^1.0@beta",
-        "drupal/entity_usage": "^2.0@beta",
-        "drupal/environment_indicator": "^4.0",
-        "drupal/field_group": "^3.1",
-        "drupal/field_permissions": "^1.1",
-        "drupal/force_users_logout": "^2.0.x-dev",
-        "drupal/google_tag": "^1.4",
-        "drupal/gtm_exclude_cookie": "1.0.x-dev",
-        "drupal/honeypot": "^2.0",
-        "drupal/layout_paragraphs": "^1.0",
-        "drupal/linkit": "^6.0.0",
-        "drupal/login_history": "^1.0",
-        "drupal/metatag": "^1.16",
-        "drupal/moderation_sidebar": "^1.4",
-        "drupal/pantheon_advanced_page_cache": "^1.2",
-        "drupal/pathauto": "^1.8",
-        "drupal/role_delegation": "^1.1",
-        "drupal/role_expire": "^2.0",
-        "drupal/scheduled_transitions": "^2.1",
-        "drupal/scheduled_transitions_sidebar": "^2.0",
-        "drupal/sendgrid_integration": "^1.7",
-        "drupal/shortcode": "2.0.x-dev",
-        "drupal/simple_styleguide": "^1.8",
-        "drupal/simplesamlphp_auth": "^3.2",
-        "drupal/structure_sync": "^2.0",
-        "drupal/twig_tweak": "^3.1",
-        "drupal/twig_vardumper": "^3.0",
-        "drupal/user_external_invite": "^2.0.x-dev",
-        "drupal/views_data_export": "^1.0",
-        "drupal/webform": "^6.0",
-        "drupal/webform_config_ignore": "^1.2",
-        "drupal/webp": "^1.0@beta",
-        "drupal/xmlsitemap": "^1.0",
+        "pantheon-upstreams/upstream-configuration": "*",
         "drush/drush": "^10"
     },
     "conflict": {
-        "drupal/drupal": "*"
+            "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "installer-paths": {
-            "web/core": [
-                "type:drupal-core"
-            ],
-            "web/libraries/{$name}": [
-                "type:drupal-library"
-            ],
-            "web/modules/composer/{$name}": [
-                "type:drupal-module"
-            ],
-            "web/profiles/composer/{$name}": [
-                "type:drupal-profile"
-            ],
-            "web/themes/composer/{$name}": [
-                "type:drupal-theme"
-            ],
-            "drush/Commands/contrib/{$name}": [
-                "type:drupal-drush"
-            ],
-            "web/private/scripts/quicksilver/{$name}/": [
-                "type:quicksilver-script"
-            ]
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/composer/{$name}": ["type:drupal-module"],
+            "web/profiles/composer/{$name}": ["type:drupal-profile"],
+            "web/themes/composer/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
         },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
@@ -101,14 +48,6 @@
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false
             }
-        },
-        "patches": {
-            "drupal/core": {
-                "Taxonomy Index for unpublished entities": "https://www.drupal.org/files/issues/2021-02-03/962664-drupal-add-unpublished-nodes-to-taxonomy-index-168.patch"
-            },
-            "drupal/structure_sync": {
-                "D9 - getVocabularyId (undefined method)": "https://www.drupal.org/files/issues/2020-11-05/3180878-undefined-method-getVocabularyId-1.patch"
-            }
         }
     },
     "config": {
@@ -117,15 +56,5 @@
         "platform": {
             "php": "7.4"
         }
-    },
-    "scripts": {
-        "post-update-cmd": [
-            "mkdir -p web/libraries/bootstrap",
-            "cp -R vendor/twbs/bootstrap/dist web/libraries/bootstrap",
-        ],
-        "post-install-cmd": [
-            "mkdir -p web/libraries/bootstrap",
-            "cp -R vendor/twbs/bootstrap/dist web/libraries/bootstrap",
-        ]
     }
 }
