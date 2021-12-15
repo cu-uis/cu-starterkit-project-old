@@ -69,7 +69,10 @@
         "drupal/config_batch_export": "^1.0@beta",
         "drupal/config_filter": "^2.2",
         "drupal/config_split": "^1.7",
-        "drupal/config_views": "^2.0@beta"
+        "drupal/config_views": "^2.0@beta",
+        "drupal/redirect": "^1.7",
+        "drupal/swiftmailer": "^2.2",
+        "drupal/xls_serialization": "^1.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
