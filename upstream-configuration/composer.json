@@ -65,7 +65,11 @@
         "drupal/gtm_exclude_cookie" : "*",
         "drupal/user_external_invite" : "*",
         "drupal/webp": "^1.0@beta",
-        "drupal/rabbit_hole": "^1.0@beta"
+        "drupal/rabbit_hole": "^1.0@beta",
+        "drupal/config_batch_export": "^1.0@beta",
+        "drupal/config_filter": "^2.2",
+        "drupal/config_split": "^1.7",
+        "drupal/config_views": "^2.0@beta"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
