@@ -3,6 +3,9 @@
 /**
  * @file
  * Lists available colors and color schemes for the Bootstrap Barrio theme.
+ * 
+ * Fixed added in relation to color schemes being used:
+ * https://www.drupal.org/project/drupal/issues/1236098#comment-13215759
  */
 
 $info = [
@@ -19,6 +22,7 @@ $info = [
     'titleslogan' => t('Title and slogan'),
     'text' => t('Text color'),
     'link' => t('Link color'),
+    'base' => t('Base color'),
   ],
   // Pre-defined color schemes.
   'schemes' => [
@@ -36,6 +40,7 @@ $info = [
         'titleslogan' => '#fffeff',
         'text' => '#3b3b3b',
         'link' => '#0071b3',
+        'base' => '#0071b3',
       ],
     ],
     'firehouse' => [
@@ -52,6 +57,7 @@ $info = [
         'titleslogan' => '#fffeff',
         'text' => '#888888',
         'link' => '#d6121f',
+        'base' => '#d6121f',
       ],
     ],
     'ice' => [
@@ -68,6 +74,7 @@ $info = [
         'titleslogan' => '#000000',
         'text' => '#4a4a4a',
         'link' => '#019dbf',
+        'base' => '#019dbf',
       ],
     ],
     'plum' => [
@@ -84,6 +91,7 @@ $info = [
         'titleslogan' => '#ffffff',
         'text' => '#301313',
         'link' => '#9d408d',
+        'base' => '#9d408d',
       ],
     ],
     'slate' => [
@@ -100,6 +108,24 @@ $info = [
         'titleslogan' => '#ffffff',
         'text' => '#3b3b3b',
         'link' => '#0073b6',
+        'base' => '#0073b6',
+      ],
+    ],
+    'cusys' => [
+      'title' => t('CU Brand'),
+      'colors' => [
+        'top' => '#000000',
+        'bottom' => '#595959',
+        'bg' => '#ffffff',
+        'sidebar' => '#dddddd',
+        'sidebarborders' => '#f9f9f9',
+        'footer' => '#000000',
+        'button' => '#cfb87c',
+        'buttonhover' => '#ae9043',
+        'titleslogan' => '#ffffff',
+        'text' => '#000000',
+        'link' => '#0079C0',
+        'base' => '#0079C0',
       ],
     ],
   ],

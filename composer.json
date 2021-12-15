@@ -1,5 +1,5 @@
 {
-    "name": "cu-uis/cu-starterkit-project",
+    "name": "pantheon-upstreams/drupal-recommended",
     "description": "Install Drupal 9 with Composer on Pantheon.",
     "type": "project",
     "license": "MIT",
@@ -11,16 +11,271 @@
         {
             "type": "path",
             "url": "upstream-configuration"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "algolia/places",
+                "version": "1.19.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "algolia.places"
+                },
+                "dist": {
+                    "url": "https://registry.npmjs.org/places.js/-/places.js-1.19.0.tgz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/autogrow",
+                "version": "4.17.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.autogrow"
+                },
+                "dist": {
+                    "url": "https://download.ckeditor.com/autogrow/releases/autogrow_4.17.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/codemirror",
+                "version": "v1.17.12",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.codemirror"
+                },
+                "dist": {
+                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.12/CKEditor-CodeMirror-Plugin.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/fakeobjects",
+                "version": "4.17.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.fakeobjects"
+                },
+                "dist": {
+                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.17.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/image",
+                "version": "4.17.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.image"
+                },
+                "dist": {
+                    "url": "https://download.ckeditor.com/image/releases/image_4.17.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/link",
+                "version": "4.17.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.link"
+                },
+                "dist": {
+                    "url": "https://download.ckeditor.com/link/releases/link_4.17.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "codemirror/codemirror",
+                "version": "5.61.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "codemirror"
+                },
+                "dist": {
+                    "url": "https://github.com/components/codemirror/archive/5.61.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/inputmask",
+                "version": "5.0.6",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.inputmask"
+                },
+                "dist": {
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/5.0.6.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/intl-tel-input",
+                "version": "16.1.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.intl-tel-input"
+                },
+                "dist": {
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v16.1.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/rateit",
+                "version": "1.1.3",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.rateit"
+                },
+                "dist": {
+                    "url": "https://github.com/gjunge/rateit.js/archive/1.1.3.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/select2",
+                "version": "4.0.13",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.select2"
+                },
+                "dist": {
+                    "url": "https://github.com/select2/select2/archive/4.0.13.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/textcounter",
+                "version": "0.9.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.textcounter"
+                },
+                "dist": {
+                    "url": "https://github.com/ractoon/jQuery-Text-Counter/archive/0.9.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/timepicker",
+                "version": "1.13.18",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.timepicker"
+                },
+                "dist": {
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.13.18.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "progress-tracker/progress-tracker",
+                "version": "2.0.6",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "progress-tracker"
+                },
+                "dist": {
+                    "url": "https://github.com/NigelOToole/progress-tracker/archive/2.0.6.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "signature_pad/signature_pad",
+                "version": "2.3.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "signature_pad"
+                },
+                "dist": {
+                    "url": "https://github.com/szimek/signature_pad/archive/v2.3.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "tabby/tabby",
+                "version": "12.0.3",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "tabby"
+                },
+                "dist": {
+                    "url": "https://github.com/cferdinandi/tabby/archive/v12.0.3.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "tippyjs/6.x",
+                "version": "6.2.6",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "tippyjs/6.x"
+                },
+                "dist": {
+                    "url": "https://unpkg.com/tippy.js@6.2.6/dist/tippy-bundle.umd.min.js",
+                    "type": "file"
+                }
+            }
         }
     ],
     "require": {
-        "pantheon-upstreams/upstream-configuration": "self.version",
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drush/drush": "^10",
         "pantheon-systems/drupal-integrations": "^9",
-        "cweagans/composer-patches": "^1.7",
-        "drush/drush": "^10"
+        "pantheon-upstreams/upstream-configuration": "self.version"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
@@ -28,7 +283,7 @@
     "conflict": {
             "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "drupal-scaffold": {
@@ -57,6 +312,7 @@
             "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
         },
         "composer-exit-on-patch-failure": true,
+        "enable-patching": true,
         "patchLevel": {
             "drupal/core": "-p2"
         }

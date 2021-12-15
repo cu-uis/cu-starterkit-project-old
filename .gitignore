@@ -102,4 +102,3 @@
 # Ignore local dev environments #
 .ddev/*
 /web/sites/default/settings.php
-

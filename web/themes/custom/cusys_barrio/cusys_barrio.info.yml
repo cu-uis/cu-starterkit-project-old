@@ -1,4 +1,6 @@
-name: CU System Subtheme
+# CU Systems frontend subtheme
+# The theme is generated from Barrio Bootstrap 5
+name: CU System Frontend Subtheme
 type: theme
 description: 'Basic structure for a Bootstrap Barrio SubTheme.'
 core: 8.x
@@ -8,6 +10,23 @@ base theme: bootstrap_barrio
 libraries:
   - cusys_barrio/bootstrap_cdn
   - cusys_barrio/global-styling
+
+libraries-override:
+  bootstrap_barrio/roboto:
+    css:
+      component:
+        fonts/roboto.css: false
+        //fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700: false
+
+libraries-extend:
+  node/drupal.node.preview:
+    - cusys_barrio/drupal.node.preview
+
+ckeditor_stylesheets:
+  - css/base/variables.css
+  - fonts/roboto.css
+  - css/base/color.css
+  - css/component/table.css
 
 regions:
   top_header: 'Top header'
@@ -32,8 +51,3 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
-
-# Information added by Drupal.org packaging script on 2021-05-23
-version: '5.5.1'
-project: 'bootstrap_barrio'
-datestamp: 1621798748

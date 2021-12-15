@@ -1,78 +1,78 @@
 /* ---------- Color Module Styles ----------- */
 
 body {
-  color: #3b3b3b;
-  background: #292929;
+  color: #000000 !important;
+  background: #000000;
 }
 
 #page,
 #main-wrapper,
 .region-primary-menu .menu-item a.is-active,
 .region-primary-menu .menu-item--active-trail a {
-  background: #fff;
+  background: #ffffff;
 }
 
 .tabs ul.primary li a.is-active {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .tabs ul.primary li.is-active a {
-  background-color: #fff;
-  border-bottom-color: #fff;
+  background-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 #navbar-top {
-  background-color: #055a8e;
+  background-color: #000000;
 }
 
 #navbar-main {
-  background-color: #000;
+  background-color: #000000;
 }
 
 a,
 .link {
-  color: #0071b3;
+  color: #0079c0;
 }
 
 a:hover,
 a:focus,
 .link:hover,
 .link:focus {
-  color: #018fe2;
+  color: #0095ed;
 }
 
 a:active,
 .link:active {
-  color: #23aeff;
+  color: #2bb0fe;
 }
 
 .page-item.active .page-link {
-  background-color: #0071b3;
-  border-color: #0071b3;
+  background-color: #0079c0;
+  border-color: #0079c0;
 }
 
 .page-link,
 .page-link:hover {
-  color: #0071b3;
+  color: #0079c0;
 }
 
 .sidebar .block {
-  background-color: #f6f6f2;
+  background-color: #dddddd;
   border-color: #f9f9f9;
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #cfb87c;
+  border-color: #cfb87c;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #0256b1;
+  background-color: #ae9043;
 }
 
 .site-footer {
-  background: #292929;
+  background: #000000;
 }
 
 .region-header,
@@ -84,7 +84,7 @@ a:active,
 .region-header .site-branding a,
 .region-secondary-menu .menu-item a,
 .region-secondary-menu .menu-item a.is-active {
-  color: #fffeff;
+  color: #ffffff;
 }
 
 
