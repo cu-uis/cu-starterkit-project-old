@@ -64,8 +64,11 @@
         "drupal/entity_clone" : "*",
         "drupal/gtm_exclude_cookie" : "*",
         "drupal/user_external_invite" : "*",
-        "drupal/webp": "^1.0@beta"
+        "drupal/webp": "^1.0@beta",
+        "drupal/rabbit_hole": "^1.0@beta"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information."
     },
