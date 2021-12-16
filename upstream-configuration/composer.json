@@ -105,5 +105,6 @@
         "drupal/config_views": {
             "_views_views_config_process_schema() fix": "https://www.drupal.org/files/issues/2020-07-23/config_views-2859245-15-fix-fatal-error-and-undefined-offset.patch"
         }
-    }
+    },
+    "version": "1.0.0"
 }
